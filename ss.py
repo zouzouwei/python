@@ -37,4 +37,3 @@ images, labels=batch
 grid=torchvision.utils.make_grid(images,nrow=10)#这个函数创造一个网格，nrow表示一排显示图形数量
 plt.figure(figsize=(15,15))#提供长宽高  不提供默认为6.4 ，4.8 figure是表示提供很多图行
 plt.imshow(np.transpose(grid,(1,2,0)))
-print('label',labels)#可以将图片显示出来
